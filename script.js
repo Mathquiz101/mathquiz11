@@ -1,52 +1,57 @@
 const questions = [
     {
-        question: "What is 20% of 150?",
-        options: ["15", "30", "25", "35"],
-        correct: 1
-    },
-    {
-        question: "If an item costs $200 and is sold at a 25% discount, what is the discounted price?",
-        options: ["$150", "$175", "$125", "$160"],
+        question: "What is the sum of the interior angles of a triangle?",
+        options: ["180°", "360°", "90°", "270°"],
         correct: 0
     },
     {
-        question: "What is the result of approximating 47.89 to the nearest whole number?",
-        options: ["48", "47", "50", "46"],
+        question: "What type of triangle has all sides equal?",
+        options: ["Equilateral", "Isosceles", "Scalene", "Right"],
         correct: 0
     },
     {
-        question: "A profit margin of 15% on an item sold for $300 means a profit of:",
-        options: ["$45", "$60", "$50", "$40"],
+        question: "What is the measure of each angle in an equilateral triangle?",
+        options: ["60°", "90°", "45°", "120°"],
         correct: 0
     },
     {
-        question: "What is 75% of 80?",
-        options: ["60", "65", "55", "70"],
+        question: "If one angle of a right triangle is 60°, what is the other non-right angle?",
+        options: ["30°", "45°", "60°", "90°"],
         correct: 0
     },
     {
-        question: "Round 3.678 to the nearest hundredth",
-        options: ["3.68", "3.67", "3.70", "3.66"],
+        question: "A triangle with one angle greater than 90° is called:",
+        options: ["Obtuse", "Acute", "Right", "Equilateral"],
         correct: 0
     },
     {
-        question: "What is the percentage increase from 40 to 50?",
-        options: ["20%", "25%", "15%", "10%"],
-        correct: 1
-    },
-    {
-        question: "Approximate 16.7 × 3.9 to the nearest ten",
-        options: ["60", "70", "65", "55"],
-        correct: 1
-    },
-    {
-        question: "If 30% of a number is 45, what is the number?",
-        options: ["150", "135", "165", "140"],
+        question: "What is the exterior angle of a triangle equal to?",
+        options: [
+            "The sum of the two opposite interior angles",
+            "The sum of all interior angles",
+            "The difference of two interior angles",
+            "Half the sum of the interior angles"
+        ],
         correct: 0
     },
     {
-        question: "Round 0.6837 to the nearest tenth",
-        options: ["0.7", "0.6", "0.68", "0.69"],
+        question: "A triangle has sides of lengths 3 cm, 4 cm, and 5 cm. What type of triangle is this?",
+        options: ["Right", "Equilateral", "Obtuse", "Acute"],
+        correct: 0
+    },
+    {
+        question: "What is the base angle of an isosceles triangle if its vertex angle is 40°?",
+        options: ["70°", "50°", "60°", "80°"],
+        correct: 0
+    },
+    {
+        question: "In a triangle, if two angles are 50° and 60°, what is the third angle?",
+        options: ["70°", "80°", "90°", "60°"],
+        correct: 0
+    },
+    {
+        question: "Which type of triangle has no equal sides?",
+        options: ["Scalene", "Equilateral", "Isosceles", "Right"],
         correct: 0
     }
 ];
@@ -174,7 +179,7 @@ function endQuiz() {
     if (percentage > 50) {
         const nextLevelContainer = document.getElementById('next-level-container');
         const nextLevelLink = document.getElementById('next-level-link');
-        const link = 'https://waecmathsuccess.github.io/mathlevel2/';
+        const link = 'https://waecmathsuccess.github.io/mathlevel12/';
         
         nextLevelLink.href = link;
         nextLevelLink.textContent = link;
